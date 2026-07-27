@@ -1,0 +1,33 @@
+body {
+  background-image: url('photo_2026-07-26_20-55-29.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.neon-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #fff;
+  background-color: #0088cc; /* Фірмовий колір Telegram (або #000) */
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  
+  /* Створюємо неонове сяйво за допомогою декількох шарів тіні */
+  box-shadow: 0 0 5px #0088cc,
+              0 0 15px #0088cc,
+              0 0 25px #0088cc;
+  
+  transition: all 0.3s ease;
+}
+
+/* Ефект при наведенні курсора */
+.neon-btn:hover {
+  box-shadow: 0 0 10px #0088cc,
+              0 0 25px #0088cc,
+              0 0 40px #0088cc;
+  transform: translateY(-2px);
+}
+
